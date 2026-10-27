@@ -1,0 +1,25 @@
+{
+  "name": "moss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": "true",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "lint": "pnpm --filter web lint",
+    "typecheck": "pnpm --filter web exec tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.15.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.15.0",
+  "type": "module"
+}
