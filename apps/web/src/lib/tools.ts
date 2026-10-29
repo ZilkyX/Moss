@@ -226,3 +226,10 @@ export function searchTools(query: string) {
     .sort((a, b) => b.score - a.score)
     .map((match) => match.tool)
 }
+
+export function getTool(slug: string): Tool {
+  const tool = tools.find((t) => t.slug === slug)
+  if (!tool) throw new Error(`${slug} is missing from lib/tools.ts`)
+  return tool
+}
+
